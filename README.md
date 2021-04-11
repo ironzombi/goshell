@@ -1,5 +1,5 @@
 # goshell
-Fake shell written in Golang
+<h1>Fake shell written in Golang</h1>
 <pre>
 mimics a shell poorly, does basically nothing.</pre>
 1. ls 
