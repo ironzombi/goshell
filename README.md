@@ -2,12 +2,12 @@
 Fake shell written in Golang
 <pre>
 mimics a shell poorly, does basically nothing.</pre>
-*ls 
+1. ls 
 --*recursive ls on cwd
-*uname
+2. uname
 --*prints some text
-*pwd 
+3. pwd 
 --*prints cwd
-*echo 
+3. echo 
 --*echoes some text
 
