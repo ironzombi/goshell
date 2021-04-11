@@ -36,6 +36,10 @@ func currentDir() string {
 	return cdir
 }
 
+func echoCmd(carg []string) {
+	fmt.Println(carg[1:])
+}
+
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("\033[H\033[2J")
@@ -59,6 +63,8 @@ func main() {
 			listCwd()
 		case command[0] == "pwd":
 			currentDir()
+		case command[0] == "echo":
+			echoCmd(command)
 		default:
 			fmt.Println("command not found")
 		}
