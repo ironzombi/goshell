@@ -3,16 +3,16 @@ Fake shell written in Golang
 <pre>
 mimics a shell poorly, does basically nothing.</pre>
 1. ls 
-2. 
+
 ⋅⋅* recursive ls on cwd
 2. uname
-3. 
+
 ⋅⋅* prints some text.
 3. pwd 
-4. 
+
 ⋅⋅* prints cwd.
 3. echo 
-4. 
+
 ⋅⋅* echoes some text.
 
 2. Another item
