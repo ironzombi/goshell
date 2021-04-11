@@ -6,15 +6,20 @@ mimics a shell poorly, does basically nothing.</pre>
 
 ⋅⋅⋅recursive ls on cwd
 
+
 2. uname
 
 ⋅⋅⋅prints some text
+
 
 3. pwd 
 
 ⋅⋅⋅prints cwd
 
+
 3. echo 
 
 ⋅⋅⋅echoes some text
+
+
 
