@@ -48,15 +48,16 @@ func main() {
 		text, _ := reader.ReadString('\n')
 
 		text = strings.Replace(text, "\n", "", -1)
+		command := strings.Fields(text)
 
 		switch {
-		case text == "exit":
+		case command[0] == "exit":
 			return
-		case text == "uname":
+		case command[0] == "uname":
 			fmt.Println("goshell v0.1")
-		case text == "ls":
+		case command[0] == "ls":
 			listCwd()
-		case text == "pwd":
+		case command[0] == "pwd":
 			currentDir()
 		default:
 			fmt.Println("command not found")
