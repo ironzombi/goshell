@@ -52,8 +52,8 @@ func main() {
 		switch {
 		case text == "exit":
 			return
-		case text == "wow":
-			fmt.Println("switch works!")
+		case text == "uname":
+			fmt.Println("goshell v0.1")
 		case text == "ls":
 			listCwd()
 		case text == "pwd":
