@@ -34,6 +34,7 @@ func ListCwd() {
 	for _, file := range files {
 		fmt.Println(file)
 	}
+	fmt.Println(root)
 }
 
 // list the current dir path
