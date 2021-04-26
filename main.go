@@ -4,43 +4,10 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"path/filepath"
 	"strings"
 
 	"fsec/goshell/cmd"
 )
-
-func listCwd() {
-	var files []string
-	root, err := os.Getwd()
-	if err != nil {
-		fmt.Println(err)
-	}
-	err = filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
-		files = append(files, path)
-		return nil
-	})
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	for _, file := range files {
-		fmt.Println(file)
-	}
-}
-
-func currentDir() string {
-	cdir, err := os.Getwd()
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(cdir)
-	return cdir
-}
-
-func echoCmd(carg []string) {
-	fmt.Println(carg[1:])
-}
 
 func main() {
 	reader := bufio.NewReader(os.Stdin)
