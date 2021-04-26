@@ -6,6 +6,8 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+
+	"fsec/goshell/cmd"
 )
 
 func listCwd() {
@@ -65,6 +67,10 @@ func main() {
 			currentDir()
 		case command[0] == "echo":
 			echoCmd(command)
+		case command[0] == "hello":
+			cmd.ListAll()
+		case command[0] == "clear":
+			cmd.ClearScreen()
 		default:
 			fmt.Println("command not found")
 		}
