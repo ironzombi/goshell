@@ -11,7 +11,7 @@ func ListAll() {
 	fmt.Println("hey")
 }
 
-// clear the terminal
+// ClearScreen clears the current the terminal
 func ClearScreen() {
 	fmt.Print("\033[H\033[2J")
 }
