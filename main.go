@@ -62,11 +62,11 @@ func main() {
 		case command[0] == "uname":
 			fmt.Println("goshell v0.1")
 		case command[0] == "ls":
-			listCwd()
+			cmd.ListCwd()
 		case command[0] == "pwd":
-			currentDir()
+			cmd.CurrentDir()
 		case command[0] == "echo":
-			echoCmd(command)
+			cmd.EchoCmd(command)
 		case command[0] == "hello":
 			cmd.ListAll()
 		case command[0] == "clear":
