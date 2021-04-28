@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"fsec/goshell/cmd"
+	"goshell/cmd"
 )
 
 func main() {
@@ -38,6 +38,10 @@ func main() {
 			cmd.ListAll()
 		case command[0] == "clear":
 			cmd.ClearScreen()
+		case command[0] == "ping":
+			cmd.Ping(command[1])
+		case command[0] == "write":
+			cmd.WriteFile(command[1], command[2])
 		default:
 			fmt.Println("command not found")
 		}
